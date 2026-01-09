@@ -4,6 +4,7 @@ import { Hero } from '@/components/Hero'
 import { TrustedSection } from '@/components/TrustedSection'
 import { ServicesSection } from '@/components/ServicesSection'
 import { WhyChooseUsSection } from '@/components/WhyChooseUsSection'
+import { HowItWorksSection } from '@/components/HowItWorksSection'
 
 export const Route = createFileRoute('/')({ component: App })
 
@@ -15,6 +16,7 @@ function App() {
       <TrustedSection />
       <ServicesSection />
       <WhyChooseUsSection />
+      <HowItWorksSection />
     </div>
   )
 }
