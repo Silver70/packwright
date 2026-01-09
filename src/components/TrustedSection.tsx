@@ -1,7 +1,7 @@
 export function TrustedSection() {
   return (
-    <section className="relative bg-white py-16 md:py-24 lg:py-32">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative bg-gray-50 py-16 md:py-24 lg:py-32 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Left - Image */}
           <div className="order-2 lg:order-1">
@@ -29,6 +29,9 @@ export function TrustedSection() {
           </div>
         </div>
       </div>
+
+      {/* Subtle decorative blob */}
+      <div className="absolute top-0 left-0 w-96 h-96 bg-primary rounded-full mix-blend-multiply filter blur-[100px] opacity-15 pointer-events-none" />
     </section>
   )
 }

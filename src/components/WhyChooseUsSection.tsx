@@ -24,10 +24,11 @@ export function WhyChooseUsSection() {
   ]
 
   return (
-    <section className="relative bg-white py-16 md:py-24 lg:py-32">
+    <section className="relative bg-gray-50 py-16 md:py-24 lg:py-32 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12 md:mb-16">
+          <div className="w-20 h-1 bg-primary mb-6 mx-auto"></div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
             Why Ecommerce Brands{' '}
             <span className="text-primary">Choose Us</span>
@@ -80,6 +81,9 @@ export function WhyChooseUsSection() {
           </div>
         </div>
       </div>
+
+      {/* Subtle decorative blob */}
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-primary rounded-full mix-blend-multiply filter blur-[100px] opacity-20 pointer-events-none -z-0" />
     </section>
   )
 }

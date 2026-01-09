@@ -33,6 +33,7 @@ export function HowItWorksSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="mb-12 md:mb-16">
+          <div className="w-20 h-1 bg-primary mb-6"></div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
             How it <span className="text-primary">works</span>
           </h2>
