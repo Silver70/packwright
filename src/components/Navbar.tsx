@@ -23,19 +23,19 @@ export function Navbar() {
             <div className="hidden md:flex items-center gap-8">
               <Link
                 to="/"
-                className="text-gray-700 hover:text-amber-500 transition-colors font-medium"
+                className="text-gray-700 hover:text-primary transition-colors font-medium"
               >
                 about
               </Link>
               <Link
                 to="/"
-                className="text-gray-700 hover:text-amber-500 transition-colors font-medium"
+                className="text-gray-700 hover:text-primary transition-colors font-medium"
               >
                 services
               </Link>
               <Link
                 to="/"
-                className="text-gray-700 hover:text-amber-500 transition-colors font-medium"
+                className="text-gray-700 hover:text-primary transition-colors font-medium"
               >
                 contact
               </Link>
@@ -61,7 +61,7 @@ export function Navbar() {
         onClick={() => setIsMenuOpen(false)}
       />
       <div
-        className={`fixed top-0 left-0 h-full w-64 bg-amber-400 z-40 md:hidden transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 left-0 h-full w-64 bg-primary z-40 md:hidden transform transition-transform duration-300 ease-in-out ${
           isMenuOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
       >

@@ -30,7 +30,7 @@ export function WhyChooseUsSection() {
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
             Why Ecommerce Brands{' '}
-            <span className="text-amber-400">Choose Us</span>
+            <span className="text-primary">Choose Us</span>
           </h2>
           <p className="text-gray-600 text-base sm:text-lg md:text-xl max-w-3xl mx-auto">
             Our role is simple: protect your interests while helping you secure

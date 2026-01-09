@@ -32,8 +32,8 @@ export function ServicesSection() {
         {/* Section Header */}
         <div className="mb-12 md:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-            We <span className="text-amber-400">can</span> help you{' '}
-            <span className="text-amber-400">get</span>
+            We <span className="text-primary">can</span> help you{' '}
+            <span className="text-primary">get</span>
           </h2>
         </div>
 
@@ -42,7 +42,7 @@ export function ServicesSection() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="border-2 border-amber-400 rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300 flex flex-col"
+              className="border-2 border-primary rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300 flex flex-col"
             >
               {/* Image */}
               <div className="w-full flex items-center justify-center p-8 pt-10">

@@ -17,8 +17,8 @@ export function TrustedSection() {
           {/* Right - Content */}
           <div className="order-1 lg:order-2 space-y-6">
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-              Trusted Packaging 
-              Sourcing for <span className="text-amber-400">Growing Brands</span> 
+              Trusted Packaging
+              Sourcing for <span className="text-primary">Growing Brands</span>
             </h2>
 
             <p className="text-gray-600 text-base sm:text-lg md:text-xl max-w-xl">

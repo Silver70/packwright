@@ -34,7 +34,7 @@ export function HowItWorksSection() {
         {/* Section Header */}
         <div className="mb-12 md:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-            How it <span className="text-amber-400">works</span>
+            How it <span className="text-primary">works</span>
           </h2>
         </div>
 
@@ -51,7 +51,7 @@ export function HowItWorksSection() {
                 >
                   {/* Icon */}
                   <div className="w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-lg flex items-center justify-center">
-                    <Icon className="w-6 h-6 sm:w-7 sm:h-7 text-amber-400" strokeWidth={2.5} />
+                    <Icon className="w-6 h-6 sm:w-7 sm:h-7 text-primary" strokeWidth={2.5} />
                   </div>
 
                   {/* Title */}
@@ -69,8 +69,8 @@ export function HowItWorksSection() {
           </div>
 
           {/* Right side - Large card with image */}
-          <div className="lg:row-span-1 bg-amber-400 rounded-xl overflow-hidden flex flex-col min-h-[400px] lg:min-h-full">
-            <div className="p-8 md:p-10 flex items-center justify-center flex-shrink-0">
+          <div className="lg:row-span-1 bg-primary rounded-xl overflow-hidden flex flex-col min-h-100 lg:min-h-full">
+            <div className="p-8 md:p-10 flex items-center justify-center shrink-0">
               <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white">
                 we got you
               </h3>
