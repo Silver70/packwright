@@ -19,7 +19,6 @@ export function TrustedSection() {
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
               Trusted Packaging 
               Sourcing for <span className="text-amber-400">Growing Brands</span> 
-              
             </h2>
 
             <p className="text-gray-600 text-base sm:text-lg md:text-xl max-w-xl">
