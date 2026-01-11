@@ -8,8 +8,20 @@ export function Hero() {
 
   return (
     <section className="relative overflow-hidden min-h-screen flex flex-col justify-center" style={{ backgroundColor: '#FFFEF9' }}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 w-full">
-        <div className="flex flex-col items-center text-center space-y-8 md:space-y-12">
+      {/* Grid Background Pattern */}
+      <div
+        className="absolute inset-0 z-0"
+        style={{
+          backgroundImage: `
+            linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px)
+          `,
+          backgroundSize: '40px 40px'
+        }}
+      />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 w-full relative z-10">
+        <div className="flex flex-col items-center text-center space-y-8 ">
           {/* Heading */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight max-w-5xl">
             <span className="text-secondary">Custom Mailer Boxes for</span>

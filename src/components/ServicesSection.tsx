@@ -1,28 +1,36 @@
+import { Palette, Tag, RefreshCw, Package, Leaf, Settings } from 'lucide-react'
+
 export function ServicesSection() {
   const services = [
     {
       title: 'Custom printed',
       subtitle: 'mailer boxes',
+      icon: Palette,
     },
     {
       title: 'Branded shipping',
       subtitle: 'boxes with logo',
+      icon: Tag,
     },
     {
       title: 'Subscription',
       subtitle: 'box mailers',
+      icon: RefreshCw,
     },
     {
       title: 'Corrugated and kraft',
       subtitle: 'mailer boxes',
+      icon: Package,
     },
     {
       title: 'Recycled & eco-friendly',
       subtitle: 'mailer boxes',
+      icon: Leaf,
     },
     {
       title: 'Custom sizes, inserts,',
       subtitle: '& finishes',
+      icon: Settings,
     },
   ]
 
@@ -40,32 +48,27 @@ export function ServicesSection() {
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          {services.map((service, index) => (
-            <div
-              key={index}
-              className="border-2 border-primary rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300 flex flex-col"
-            >
-              {/* Image */}
-              <div className="w-full flex items-center justify-center p-8 pt-10">
-                <div className="w-24 h-24 sm:w-28 sm:h-28">
-                  <img
-                    src="/images/Mailer Boxes 1.png"
-                    alt={`${service.title} ${service.subtitle}`}
-                    className="w-full h-full object-contain"
-                  />
+          {services.map((service, index) => {
+            const Icon = service.icon
+            return (
+              <div
+                key={index}
+                className="bg-gray-50 rounded-lg p-8 hover:shadow-lg transition-shadow duration-300 flex flex-col items-center text-center"
+              >
+                {/* Icon */}
+                <div className="mb-6">
+                  <Icon className="w-12 h-12 text-primary" strokeWidth={1.5} />
                 </div>
-              </div>
 
-              {/* Title */}
-              <div className="p-6 pt-4 flex-1 flex items-center justify-center">
-                <h3 className="text-lg sm:text-xl font-bold text-gray-900 text-center leading-snug">
+                {/* Title */}
+                <h3 className="text-lg sm:text-xl font-bold text-gray-900 leading-snug">
                   {service.title}
                   <br />
                   {service.subtitle}
                 </h3>
               </div>
-            </div>
-          ))}
+            )
+          })}
         </div>
       </div>
     </section>
