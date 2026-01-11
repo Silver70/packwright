@@ -39,6 +39,12 @@ export function Navbar() {
               >
                 contact
               </Link>
+              <Link
+                to="/quote"
+                className="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg font-semibold transition-all transform hover:scale-105 shadow-md hover:shadow-lg"
+              >
+                Get Quote
+              </Link>
             </div>
 
             {/* Mobile Menu Button */}
@@ -86,6 +92,13 @@ export function Navbar() {
             onClick={() => setIsMenuOpen(false)}
           >
             contact
+          </Link>
+          <Link
+            to="/quote"
+            className="bg-white text-primary hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold transition-all text-center mt-4"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Get Quote
           </Link>
         </div>
       </div>

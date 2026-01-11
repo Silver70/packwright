@@ -1,45 +1,74 @@
 export function Hero() {
+  const cards = [
+    { img: '/images/mailer 0.png', bg: '#D4F1F4' },
+    { img: '/images/mailer 1.png', bg: '#D4E4F7' },
+    { img: '/images/mailer 2.png', bg: '#D4E4F7' },
+    { img: '/images/mailer 3.png', bg: '#C7B8EA' },
+  ]
+
   return (
-    <section className="relative bg-white overflow-hidden min-h-screen flex items-center">
+    <section className="relative overflow-hidden min-h-screen flex flex-col justify-center" style={{ backgroundColor: '#FFFEF9' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 w-full">
         <div className="flex flex-col items-center text-center space-y-8 md:space-y-12">
           {/* Heading */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight max-w-5xl">
-            <span className="text-primary">Custom</span>{' '}
-            <span className="text-secondary">Mailer Boxes</span>{' '}
-            <span className="text-secondary">for</span>
+            <span className="text-secondary">Custom Mailer Boxes for</span>
             <br />
-            <span className="text-secondary">Ecommerce & DTC</span>{' '}
-            <span className="text-primary">Brands</span>
+            <span className="text-secondary">Ecommerce & DTC Brands</span>
           </h1>
 
           {/* Subtext */}
           <p className="text-gray-600 text-base sm:text-lg md:text-xl max-w-2xl">
-            We help growing ecommerce brands design, produce, and deliver
-            branded mailer boxes for custom orders online.
+            We help growing ecommerce brands design, produce, and ship
+            branded packaging without middlemen.
           </p>
 
           {/* CTA Button */}
           <div>
             <button className="bg-secondary text-white px-8 py-4 rounded-full font-semibold hover:bg-secondary/90 transition-colors text-base">
-              Request Demo
+              Request Quote
             </button>
-          </div>
-
-          {/* Hero Image */}
-          <div className="relative w-full max-w-4xl mt-8 md:mt-12">
-            <img
-              src="/images/main-hero-img.png"
-              alt="Custom mailer boxes showcase"
-              className="w-full h-auto object-contain"
-            />
           </div>
         </div>
       </div>
 
-      {/* Decorative gradient blobs */}
-      <div className="absolute top-0 right-0 w-125 h-125 bg-primary rounded-full mix-blend-multiply filter blur-[120px] opacity-40 pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-125 h-125 bg-primary rounded-full mix-blend-multiply filter blur-[120px] opacity-40 pointer-events-none" />
+      {/* Hero Cards Ticker - Full Width */}
+      <div className="relative w-screen overflow-hidden mt-8 md:mt-12">
+        <style dangerouslySetInnerHTML={{ __html: `
+          @keyframes scroll {
+            0% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translateX(-50%);
+            }
+          }
+          .animate-scroll {
+            animation: scroll 20s linear infinite;
+          }
+          .animate-scroll:hover {
+            animation-play-state: paused;
+          }
+        `}} />
+        <div className="flex animate-scroll">
+          {/* Duplicate the cards array twice for seamless loop */}
+          {[...cards, ...cards].map((card, index) => (
+            <div
+              key={index}
+              className="relative rounded-3xl overflow-hidden shadow-lg transition-transform hover:scale-105 shrink-0 mx-3"
+              style={{ backgroundColor: card.bg, width: '280px', height: '280px' }}
+            >
+              <div className="w-full h-full p-6 flex items-center justify-center">
+                <img
+                  src={card.img}
+                  alt="Custom mailer box"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </section>
   )
 }
